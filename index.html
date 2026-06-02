@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rishabh's Coffee | Brewed to Perfection Since 1975</title>
+<meta name="description" content="Premium specialty coffee roasted fresh in small batches. Shop Dark Espresso, French Vanilla, Hazelnut Brew and more. Free delivery over €50.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Rishabh's Coffee","url":"https://rishabhscoffee.myshopify.com","description":"Premium specialty coffee roasted fresh to order since 1975."}</script>
+</head>
+<body>
+<div class="announce" id="announce">
+  <p>☕ Free shipping on orders over €50 &nbsp;·&nbsp; Use code <strong>BREW15</strong> for 15% off your first order &nbsp;·&nbsp; Roasted fresh every week</p>
+  <button class="announce__close" id="announce-close">✕</button>
+</div>
+<nav class="nav">
+  <a href="index.html" class="nav__logo">Rishabh's Coffee</a>
+  <div class="nav__links">
+    <a href="index.html" class="nav__link active">Home</a>
+    <a href="products.html" class="nav__link">Shop</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="blog.html" class="nav__link">Journal</a>
+    <a href="faq.html" class="nav__link">FAQ</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+  </div>
+  <div class="nav__right">
+    <a href="cart.html" class="cart-btn" aria-label="Cart">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span class="cart-badge" style="display:none">0</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <button class="mobile-nav__close" id="mobile-close">✕</button>
+  <a href="index.html" class="nav__link">Home</a>
+  <a href="products.html" class="nav__link">Shop</a>
+  <a href="about.html" class="nav__link">About</a>
+  <a href="blog.html" class="nav__link">Journal</a>
+  <a href="faq.html" class="nav__link">FAQ</a>
+  <a href="contact.html" class="nav__link">Contact</a>
+  <a href="cart.html" class="nav__link">Cart</a>
+</div>
+
+<!-- HERO CAROUSEL -->
+<section class="hero">
+  <div class="hero__container">
+    <!-- SLIDE 1: Dark Espresso -->
+    <div class="hero__slide active">
+      <video class="hero__video" autoplay loop muted playsinline><source src="videos/1.mp4" type="video/mp4"></video>
+      <div class="hero__overlay"></div>
+      <div class="hero__split">
+        <div class="hero__tl">
+          <span class="hero__label">Signature Blend</span>
+          <h1 class="hero__title">Dark<br>Espresso</h1>
+          <p class="hero__tagline">Bold, intense, unforgettable.</p>
+        </div>
+        <div class="hero__br">
+          <p class="hero__desc">Rich Arabica beans roasted to perfection for a deep, robust flavour that awakens your senses.</p>
+          <div class="hero__price"><span class="hero__price-amt">€13.49</span><span class="hero__price-unit">per 250g bag</span></div>
+          <a href="product.html?handle=dark-espresso" class="btn btn--glass">Shop Dark Espresso <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <!-- SLIDE 2: French Vanilla -->
+    <div class="hero__slide">
+      <video class="hero__video" loop muted playsinline><source src="videos/2.mp4" type="video/mp4"></video>
+      <div class="hero__overlay"></div>
+      <div class="hero__split">
+        <div class="hero__tl">
+          <span class="hero__label">Premium Roast</span>
+          <h1 class="hero__title">Vanilla<br>French</h1>
+          <p class="hero__tagline">Smooth, sweet, elegant.</p>
+        </div>
+        <div class="hero__br">
+          <p class="hero__desc">Velvety French roast kissed with natural Madagascar vanilla for a luxurious morning ritual.</p>
+          <div class="hero__price"><span class="hero__price-amt">€14.99</span><span class="hero__price-unit">per 250g bag</span></div>
+          <a href="product.html?handle=french-vanilla" class="btn btn--glass">Shop Vanilla French <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <!-- SLIDE 3: Hazelnut -->
+    <div class="hero__slide">
+      <video class="hero__video" loop muted playsinline><source src="videos/3.mp4" type="video/mp4"></video>
+      <div class="hero__overlay"></div>
+      <div class="hero__split">
+        <div class="hero__tl">
+          <span class="hero__label">Seasonal Favourite</span>
+          <h1 class="hero__title">Hazelnut<br>Brew</h1>
+          <p class="hero__tagline">Nutty, warm, comforting.</p>
+        </div>
+        <div class="hero__br">
+          <p class="hero__desc">European hazelnut meets medium roast for a cosy, aromatic experience perfect for any time of day.</p>
+          <div class="hero__price"><span class="hero__price-amt">€14.99</span><span class="hero__price-unit">per 250g bag</span></div>
+          <a href="product.html?handle=hazelnut-brew" class="btn btn--glass">Shop Hazelnut Brew <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="hero__nav hero__nav--prev" onclick="heroPrev()" aria-label="Previous">&#8249;</button>
+  <button class="hero__nav hero__nav--next" onclick="heroNext()" aria-label="Next">&#8250;</button>
+  <div class="hero__dots">
+    <button class="hero__dot active" onclick="heroGo(0)"></button>
+    <button class="hero__dot" onclick="heroGo(1)"></button>
+    <button class="hero__dot" onclick="heroGo(2)"></button>
+  </div>
+  <div class="hero__scroll"><span>Scroll to explore</span><div class="hero__scroll-line"></div></div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust__item">🌍 Single-Origin Beans</div>
+  <div class="trust__item">🔥 Roasted Fresh Weekly</div>
+  <div class="trust__item">🚚 Free Delivery €50+</div>
+  <div class="trust__item">♻️ Eco Packaging</div>
+  <div class="trust__item">⭐ 4.9 / 5 Rating</div>
+</div>
+
+<!-- PERFECT POUR -->
+<div class="pour">
+  <div class="pour__text">
+    <span class="section-tag">The Ritual</span>
+    <h2>Perfect Pour,<br>Every Time</h2>
+    <p>Coffee isn't just a beverage; it's a moment of pause in a chaotic world. Watch as we master the art of the pour, delivering liquid gold straight to your cup.</p>
+    <a href="products.html" class="btn btn--gold">Explore Our Collection →</a>
+  </div>
+  <div class="pour__video">
+    <video autoplay loop muted playsinline><source src="videos/4.mp4" type="video/mp4"></video>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="reviews">
+  <h2>What Our Customers Say</h2>
+  <div class="reviews__grid">
+    <div class="review"><div class="review__stars">★★★★★</div><p class="review__text">"Well rounded coffee — always tastes good. I've stopped buying from anywhere else. Consistently excellent in every single cup."</p><span class="review__name">Shaunak Mazumder</span><div class="review__meta">✓ Verified Customer · 3 days ago</div></div>
+    <div class="review"><div class="review__stars">★★★★★</div><p class="review__text">"Wonderfully fresh coffee beans with amazing flavour! The aroma alone fills the room the moment you open the bag. Absolutely brilliant."</p><span class="review__name">Anonymous</span><div class="review__meta">✓ Verified Customer · 1 week ago</div></div>
+    <div class="review"><div class="review__stars">★★★★★</div><p class="review__text">"I've stopped going out to get a coffee because none compares to the amazing coffee I can make at home with Rishabh's beans."</p><span class="review__name">Birgitte Woehlk</span><div class="review__meta">✓ Verified Customer · 1 week ago</div></div>
+    <div class="review"><div class="review__stars">★★★★★</div><p class="review__text">"I bought the coffee and it arrived in good time. The coffee grinds well, isn't too oily and makes a perfect cup every morning."</p><span class="review__name">Alison Allen</span><div class="review__meta">✓ Verified Customer · 1 week ago</div></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="shop" id="shop">
+  <div class="shop__hd">
+    <span class="section-tag">Our Collection</span>
+    <h2 class="section-h">Discover Our Coffees</h2>
+    <p class="section-sub">From bold espressos to smooth vanilla blends, find your perfect cup. Every bag roasted to order and shipped within 24 hours.</p>
+  </div>
+  <div class="products">
+    <a href="product.html?handle=dark-espresso" class="pcard"><div class="pcard__img-wrap"><div class="pcard__badge">Bestseller</div><img class="pcard__img" src="images/dark-espresso.jpeg" alt="Dark Espresso — bold dark roast coffee bag"></div><div class="pcard__info"><div class="pcard__cat">Signature Blend</div><div class="pcard__name">Dark Espresso</div><div class="pcard__tag">Bold. Intense. Unforgettable.</div><div class="pcard__price">€13.49</div></div></a>
+    <a href="product.html?handle=french-vanilla" class="pcard"><div class="pcard__img-wrap"><img class="pcard__img" src="images/french-vanilla.jpeg" alt="French Vanilla — smooth light roast coffee bag"></div><div class="pcard__info"><div class="pcard__cat">Premium Roast</div><div class="pcard__name">French Vanilla</div><div class="pcard__tag">Smooth. Sweet. Elegant.</div><div class="pcard__price">€14.99</div></div></a>
+    <a href="product.html?handle=hazelnut-brew" class="pcard"><div class="pcard__img-wrap"><img class="pcard__img" src="images/hazelnut-brew.jpeg" alt="Hazelnut Brew — nutty medium roast coffee bag"></div><div class="pcard__info"><div class="pcard__cat">Seasonal Favourite</div><div class="pcard__name">Hazelnut Brew</div><div class="pcard__tag">Toasted. Silky. Comforting.</div><div class="pcard__price">€14.99</div></div></a>
+    <a href="product.html?handle=caramel-brulee" class="pcard"><div class="pcard__img-wrap"><img class="pcard__img" src="images/caramel-brulee.jpeg" alt="Caramel Brûlée — sweet decadent coffee bag"></div><div class="pcard__info"><div class="pcard__cat">Sweet Indulgence</div><div class="pcard__name">Caramel Brûlée</div><div class="pcard__tag">Sweet. Decadent. Irresistible.</div><div class="pcard__price">€13.49</div></div></a>
+    <a href="product.html?handle=mocha-java" class="pcard"><div class="pcard__img-wrap"><div class="pcard__badge">Premium</div><img class="pcard__img" src="images/mocha-java.jpeg" alt="Mocha Java — legendary classic blend coffee bag"></div><div class="pcard__info"><div class="pcard__cat">Classic Blend</div><div class="pcard__name">Mocha Java</div><div class="pcard__tag">Rich. Complex. Legendary.</div><div class="pcard__price">€15.99</div></div></a>
+    <a href="product.html?handle=cinnamon-spice" class="pcard"><div class="pcard__img-wrap"><img class="pcard__img" src="images/cinnamon-spice.jpeg" alt="Cinnamon Spice — warm aromatic coffee bag"></div><div class="pcard__info"><div class="pcard__cat">Spiced Blend</div><div class="pcard__name">Cinnamon Spice</div><div class="pcard__tag">Warm. Aromatic. Festive.</div><div class="pcard__price">€13.49</div></div></a>
+    <a href="product.html?handle=coconut-cream" class="pcard"><div class="pcard__img-wrap"><img class="pcard__img" src="images/coconut-cream.jpeg" alt="Coconut Cream — tropical light roast coffee bag"></div><div class="pcard__info"><div class="pcard__cat">Tropical Roast</div><div class="pcard__name">Coconut Cream</div><div class="pcard__tag">Tropical. Smooth. Dreamy.</div><div class="pcard__price">€14.49</div></div></a>
+    <a href="product.html?handle=peppermint-mocha" class="pcard"><div class="pcard__img-wrap"><div class="pcard__badge">Limited</div><img class="pcard__img" src="images/peppermint-mocha.png" alt="Peppermint Mocha — cool festive coffee bag"></div><div class="pcard__info"><div class="pcard__cat">Limited Edition</div><div class="pcard__name">Peppermint Mocha</div><div class="pcard__tag">Cool. Crisp. Indulgent.</div><div class="pcard__price">€14.49</div></div></a>
+  </div>
+</section>
+
+<!-- MASTERFULLY ROASTED -->
+<div class="vid-section">
+  <video class="vid-section__bg" autoplay loop muted playsinline><source src="videos/5.mp4" type="video/mp4"></video>
+  <div class="vid-section__overlay" style="background:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.75))"></div>
+  <div class="vid-section__content">
+    <span class="section-tag">The Process</span>
+    <h2 class="vid-section__h">Masterfully Roasted</h2>
+    <p class="vid-section__p">We coax out the hidden flavours of every bean. The heat is our brush, the bean our canvas. Witness the transformation from raw potential to aromatic perfection.</p>
+    <a href="about.html" class="btn btn--glass">Our Story →</a>
+  </div>
+</div>
+
+<!-- PERFECT GRIND -->
+<div class="vid-section" style="height:62vh">
+  <video class="vid-section__bg" autoplay loop muted playsinline><source src="videos/6.mp4" type="video/mp4"></video>
+  <div class="vid-section__overlay" style="background:rgba(0,0,0,.4)"></div>
+  <div class="vid-section__content" style="text-align:left;max-width:1280px;width:100%;padding:0 60px">
+    <div style="max-width:480px">
+      <span class="section-tag">Precision</span>
+      <h2 class="vid-section__h">The Perfect Grind</h2>
+      <p class="vid-section__p">Consistency is key. Our beans are ground moments before packaging to lock in the volatile oils that create that signature aroma.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EXTRACTION -->
+<div class="vid-section" style="height:62vh">
+  <video class="vid-section__bg" autoplay loop muted playsinline><source src="videos/6.mp4" type="video/mp4"></video>
+  <div class="vid-section__overlay" style="background:rgba(0,0,0,.5)"></div>
+  <div class="vid-section__content">
+    <span class="section-tag">Liquid Gold</span>
+    <h2 class="vid-section__h">The Extraction</h2>
+    <p class="vid-section__p">The final moment of truth. Water meets coffee in a delicate dance of temperature and time, yielding a cup that is rich, balanced, and utterly transcendent.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__top">
+    <div>
+      <a href="index.html" class="footer__logo">Rishabh's Coffee</a>
+      <p class="footer__desc">Small-batch specialty coffee, roasted fresh every week. Sourced directly from the world's finest farms and delivered to your door.</p>
+      <div class="footer__nl"><input type="email" placeholder="Your email address" id="nl-email"><button onclick="nlSub()">Subscribe</button></div>
+    </div>
+    <div class="footer__col"><h4>Shop</h4><a href="products.html">All Coffees</a><a href="product.html?handle=dark-espresso">Dark Espresso</a><a href="product.html?handle=french-vanilla">French Vanilla</a><a href="product.html?handle=hazelnut-brew">Hazelnut Brew</a><a href="product.html?handle=mocha-java">Mocha Java</a></div>
+    <div class="footer__col"><h4>Company</h4><a href="about.html">About Us</a><a href="blog.html">Journal</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a></div>
+    <div class="footer__col"><h4>Legal</h4><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a><h4 style="margin-top:20px">Pay Safely</h4><div class="pay-icons"><span>VISA</span><span>MC</span><span>AMEX</span><span>PAYPAL</span></div></div>
+  </div>
+  <div class="footer__brand">RISHABH'S COFFEE</div>
+  <div class="footer__bottom"><span>© 2026 Rishabh's Coffee. All rights reserved.</span><div style="display:flex;gap:20px"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div></div>
+</footer>
+<button class="chat-btn">💬 Chat with us</button>
+<script src="js/shopify.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/chatbot.js"></script>
+<script>function nlSub(){const i=document.getElementById('nl-email');if(i.value&&i.value.includes('@')){i.value='';i.placeholder='✓ Subscribed! Thank you.';i.style.color='#D4A574';}}</script>
+</body>
+</html>
